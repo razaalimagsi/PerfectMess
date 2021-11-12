@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93cb82d6ad.js" crossorigin="anonymous"></script>
+    <title>Perfect-Mess</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        /* topnav */
+        
+        .topbar {
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(45deg, #9e462c 20%, black 20%);
+        }
+        
+        .container {
+            padding: 5px 100px;
+        }
+        
+        ul,
+        li,
+        a {
+            float: right;
+            list-style: none;
+            margin-top: -08px;
+            margin-right: 10px;
+        }
+        
+        .topbar a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        h4 {
+            display: inline;
+            color: #fff;
+        }
+        
+        .container i {
+            color: #fff;
+        }
+        
+        .navbar .tab {
+            position: sticky;
+        }
+        
+        .container-box {
+            position: sticky;
+            top: 0;
+        }
+        /* NavBar */
+        
+        .navbar {
+            background-color: #ffffff;
+            width: 100%;
+            height: 40px;
+        }
+        
+        .logo {
+            font-size: 25px;
+            padding: 4px 40px;
+        }
+        
+        .tab .button {
+            display: inline-block;
+            height: 45px;
+            width: 45px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            color: #a0381f;
+        }
+        
+        .tab .button:hover {
+            width: 125px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .tab .button .icon {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+        }
+        
+        .tab .button .icon i {
+            font-size: 25px;
+            line-height: 30px;
+            transition: all 0.3s ease-out;
+        }
+        
+        .tab .button:hover .icon i {
+            color: rgb(0, 0, 0);
+        }
+        
+        .tab .button span {
+            font-size: 20px;
+            line-height: 30px;
+            margin-left: 10px;
+            transition: all 0.3s ease-out;
+        }
+        
+        .tab {
+            margin-left: 480px;
+            margin-top: -240px;
+        }
+        /* Search Box */
+        
+        .searchBox {
+            position: absolute;
+            right: 1%;
+            top: 4.8%;
+            background: #9e462c;
+            height: 38px;
+            border-radius: 40px;
+            padding: 4px;
+        }
+        
+        .searchBox:hover>.searchInput {
+            width: 240px;
+            padding: 0 6px;
+        }
+        
+        .searchBox:hover>.searchButton {
+            background: white;
+            color: #9e462c;
+        }
+        
+        .searchButton {
+            color: white;
+            float: left;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #9e462c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s;
+        }
+        
+        .searchInput {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0px;
+            color: white;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 0px;
+        }
+        /* Content Section */
+        
+        img {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .content {
+            text-align: center;
+            margin-top: -450px;
+            color: #fff;
+        }
+        
+        .content h1 {
+            font-size: 80px;
+        }
+        
+        .content p {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <i class="fas fa-phone-alt"> <h4>03075001678</h4></i>
+        </div>
+        <nav class="toparea">
+            <ul>
+                <li> <a href="#"> Login </a></li>
+                <li> <a href="#"> Registor |</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="container-box">
+        <div class="navbar">
+            <div class="logo">
+                <h3>Perfect Meess</h3>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <span>Home</span>
+            </div>
+
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-hamburger"></i>
+                </div>
+                <span>Services</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <span>Price</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <span>Profile</span>
+            </div>
+        </div>
+        <div class="searchBox">
+
+            <input class="searchInput" type="text" name="" placeholder="Type to Search...">
+            <button class="searchButton" href="#">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <img src="./mess.png" alt="Img">
+    <div class="content">
+        <h1><u> Perfect Mess </u></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquid neque,<br> molestiae laboriosam ipsa eum vitae dolore amet, eaque cupiditate minima.<br> Accusamus fuga beatae, repellat aperiam quo quae perspiciatis earum!</p>
+    </div>
+    <div>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+    </div>
+</body>
+
+</html>
